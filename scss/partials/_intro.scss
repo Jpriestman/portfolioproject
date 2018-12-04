@@ -1,0 +1,36 @@
+.intro {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: block;
+
+    h1,h2,p {
+        color: $black;
+        text-align: center;
+        margin: 0.5em 4%;
+
+
+
+    }
+    h1 {
+        font-size: 4em;
+    }
+
+    h2 {
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+    .information {
+        height: 70vh;
+    }
+    
+    .video {
+        height: 30vh;
+    }
+
+
+
+
+
+}

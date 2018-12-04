@@ -1,0 +1,47 @@
+body {
+    color: $black;
+    font-family: $ff-s;
+    line-height: 1.6;
+    background: $white;
+    font-size: .875rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+h1 {
+    color: $black;
+    line-height: 1;
+    font-size: 3.125rem;
+
+    span {
+        color: $white;
+        line-height: 1;
+        font-size: 3.125rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    color: $grey;
+    line-height: 1;
+    font-family: $ff-s;
+}
+
+.gradient {
+
+background: -webkit-linear-gradient(132deg, rgb(93, 193, 163), rgb(46, 44, 109));
+background: linear-gradient(132deg, rgb(93, 193, 163), rgb(46, 44, 109));
+
+}
+
+.pagesize {
+    height: 100vh;
+    display: flex;
+}

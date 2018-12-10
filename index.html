@@ -5,82 +5,282 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Jtpcreative - Online Portfolio</title>
-  <link rel="stylesheet" href="css/foundation.css">
   <link rel="stylesheet" href="scss/main.css">
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 <body>
 
-<div class="grid-wrapper">
+<div class="wrapper">
 
 <!-- Navigation/Header -->
 
-<section class="hero gradient pagesize column">
+<header class="anim">
+  <img src="img/Logo_Web.svg" alt="jtpcreative logo" class="logo">
+  <input type="checkbox" class="nav-toggle" id="nav-toggle">
+  <nav>
+    <ul>
+      <li><a href="#">Intro</a></li>
+      <li><a href="#casestudies">Casestudies</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="img/Priestman_Resume.pdf" download>Resume</a></li>
+    </ul>
+  </nav>
+  <label for="nav-toggle" class="nav-toggle-label">
+   <span></span>
+  </label>
+</header>
+
+
+<section class="hero gradient pagesize column anim">
   <div class="hero_info">
     <h2>Creativity & Passion</h2>
-    <h1>WELCOME TO JTPCREATIVE</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <h1><span>WELCOME TO JTPCREATIVE</span></h1>
+    <p>Check out my recent work, if you have any questions or want to work together contact me</p>
   </div>
-  <div class="arrow">
-    <img src="img/arrow.svg" alt="arrow to scroll" class="arrow_icon">
-  </div>
+  <!--<div class="arrow">
+  <img src="img/arrow.svg" alt="arrow to scroll" class="arrow_icon">
+  </div>-->
 </section>
 
 <!-- Intro -->
 
-<section class="intro pagesize">
+<section class="intro anim clear">
     <div class="information">
-      <h2>Creativity & Passion</h2>
-      <h1>Welcome to Jtpcreative</h1>
-      <p>I bring idea's to life</p>
+        <h1>About Me</h1>
+    </div>
+    <div class="character">
+      <img src="img/Little_Me-01.svg" class="svg-character" alt="little character of me">
+    </div>
+
+    <div class="summary">
+      <p>I am a highly creative and versatile graphic and web designer with 4 years of experience. I have a multitude of experience in the field of branding, print media & user interface design. I have worked with companies across Ontario and would like to expand further. Currently, I am based in London, Canada.</p>
+      <p>In my work I try to transform highly complex concepts into simple, elegant and thoughtful designs which are easy to read and visually balanced. In my opinion the most important thing is to create designs which have a "WOW" factor in them. I am passionate about what I do and committed to delivering high calibre design, consistent communication and follow-through every time.</p>
     </div>
 
     <div class="video gradient">
-      <img src="#" alt="Video Player Button">
+      <h1>View Reel</h1>
+          <video controls>
+              <source src="img/video/Video_Reel.mp4" type="video/mp4">
+                <source src="img/video/Video_Reel.ogg" type="video/ogg">
+                <source src="img/video/Video_Reel.webm" type="video/webm">
+          </video>
+  </section>
+      <!--<img src="img/video-play-64.png" alt="Video Player Button" class="videoicon">-->
     </div>
 </section>
 
 <!-- Case Studies -->
+<section class="casestudies portfolio" id="portfolio">
+    <h1>Case Studies</h1>
+<div class="work clear" id="casestudies">
 
-  <section class="first-casestudy pagesize">
-      <div class="case_info">
-          <h2>Subhead above title</h2>
-          <h1>First Case Study</h1>
-          <p>Description of the case study goes here</p>
+<!-- Case Study 1 -->
+
+<figure class="portfolio-item portfoliolft">
+    <img class="anim croton-img" src="img/Croton_Logo.jpg" alt="project img">
+      <figcaption>
+        <h2 class="portfolio-title croton-name">Project Name</h2>
+        <p class="portfolio-desc croton-desc">A Short Description Goes Here</p>
+        <a href="#" class="portfolio-link">More Info</a>
+      </figcaption>
+    <!--   Modal 1 -->
+      <div class="portfolio-modal">
+        <button class="modal-close">
+          <img src="img/remove.svg" alt="close modal icon" class="close-icon">
+      </button>
+        <div class="portfolio-header">
+            <div class="portfolio-title-box gradient">
+                <h2 class="portfolio-title">Croton Fitness</h2>
+                <div class="portfolio-subtitle">Branding</div>
+              </div>
         </div>
+        <div class="portfolio-content">
+          <p>Croton Fitness is a company located in Windsor ON. They came to me as a start up looking for a designer to create the look and feel of their brand. I took the story of Milo of Croton and turn it into their brand identity.</p>
+          <img class="portfolio-full-left" src="img/croton/croton_logo_onwhite.jpg" alt="White Image">
+          <img class="portfolio-pull-right" src="img/croton/croton_shirt.jpg" alt="Shirt">
+          <img class="portfolio-pull-right" src="img/croton/Croton_Fitness_Logo.jpg" alt="Logo">
+          <img class="portfolio-pull-right" src="img/croton/CrotonFitness.jpg" alt="Logo">
+        </div>
+      </div>
+      <!-- Modal Closed -->
+</figure>
+
+<!-- Case Study 2 -->
+
+<figure class="portfolio-item portfoliorght">
+    <img class="anim seedott-img" src="img/Seedott_Project.jpg" alt="project img">
+      <figcaption>
+        <h2 class="portfolio-title seedott-name">Project Name</h2>
+        <p class="portfolio-desc seedott-desc">A Short Description Goes Here</p>
+        <a href="#" class="portfolio-link">More Info</a>
+      </figcaption>
+
+          <!--   Modal 2 -->
+          <div class="portfolio-modal">
+              <button class="modal-close">
+                <img src="img/remove.svg" alt="close modal icon" class="close-icon">
+            </button>
+              <div class="portfolio-header">
+                  <div class="portfolio-title-box gradient">
+                      <h2 class="portfolio-title">Project Name</h2>
+                      <div class="portfolio-subtitle">Subtitle</div>
+                    </div>
+              </div>
+              <div class="portfolio-content">
+                <img class="portfolio-full-width" src="img/Croton_Logo.jpg" alt="an image of the portfolio">
+                <img class="portfolio-pull-left" src="img/Croton_Logo.jpg" alt="an image of the portfolio">
+                <img class="portfolio-pull-right" src="img/Croton_Logo.jpg" alt="an image of the portfolio">
+              </div>
+            </div>
+            <!-- Modal Closed -->
+</figure>
+
+<!-- Case Study 3 -->
+
+<figure class="portfolio-item portfoliolft">
+    <img class="anim paws-img" src="img/Paws_United.jpg" alt="project img">
+      <figcaption>
+        <h2 class="portfolio-title paws-name">Project Name</h2>
+        <p class="portfolio-desc paws-desc">A Short Description Goes Here</p>
+        <a href="#" class="portfolio-link">More Info</a>
+      </figcaption>
+
+          <!--   Modal 3 -->
+          <div class="portfolio-modal">
+              <button class="modal-close">
+                <img src="img/remove.svg" alt="close modal icon" class="close-icon">
+            </button>
+              <div class="portfolio-header">
+                  <div class="portfolio-title-box gradient">
+                      <h2 class="portfolio-title">Project Name</h2>
+                      <div class="portfolio-subtitle">Subtitle</div>
+                    </div>
+              </div>
+              <div class="portfolio-content">
+                <img class="portfolio-full-width" src="img/Croton_Logo.jpg" alt="an image of the portfolio">
+                <img class="portfolio-pull-left" src="img/Croton_Logo.jpg" alt="an image of the portfolio">
+                <img class="portfolio-pull-right" src="img/Croton_Logo.jpg" alt="an image of the portfolio">
+              </div>
+            </div>
+            <!-- Modal Closed -->
+</figure>
+
+<!-- Case Study 4 -->
+
+<figure class="portfolio-item portfoliorght">
+    <img class="anim britishd-img" src="img/British_Darts.jpg" alt="project img">
+      <figcaption>
+        <h2 class="portfolio-title britishd-name">Project Name</h2>
+        <p class="portfolio-desc britishd-desc">A Short Description Goes Here</p>
+        <a href="#" class="portfolio-link">More Info</a>
+      </figcaption>
+
+          <!--   Modal 4 -->
+          <div class="portfolio-modal">
+              <button class="modal-close">
+                <img src="img/remove.svg" alt="close modal icon" class="close-icon">
+            </button>
+              <div class="portfolio-header">
+                  <div class="portfolio-title-box gradient">
+                      <h2 class="portfolio-title">Project Name</h2>
+                      <div class="portfolio-subtitle">Subtitle</div>
+                    </div>
+              </div>
+              <div class="portfolio-content">
+                <img class="portfolio-full-width" src="img/Croton_Logo.jpg" alt="an image of the portfolio">
+                <img class="portfolio-pull-left" src="img/Croton_Logo.jpg" alt="an image of the portfolio">
+                <img class="portfolio-pull-right" src="img/Croton_Logo.jpg" alt="an image of the portfolio">
+              </div>
+            </div>
+            <!-- Modal Closed -->
+</figure>
+
+<!-- Case Study 5 -->
+
+<figure class="portfolio-item portfoliolft">
+    <img class="anim flashback-img" src="img/Flashback.jpg" alt="project img">
+      <figcaption>
+        <h2 class="portfolio-title flashback-name">Project Name</h2>
+        <p class="portfolio-desc flashback-desc">A Short Description Goes Here</p>
+        <a href="#" class="portfolio-link">More Info</a>
+      </figcaption>
+
+          <!--   Modal 5 -->
+          <div class="portfolio-modal">
+              <button class="modal-close">
+                <img src="img/remove.svg" alt="close modal icon" class="close-icon">
+            </button>
+              <div class="portfolio-header">
+                  <div class="portfolio-title-box gradient">
+                      <h2 class="portfolio-title">Project Name</h2>
+                      <div class="portfolio-subtitle">Subtitle</div>
+                    </div>
+              </div>
+              <div class="portfolio-content">
+                <img class="portfolio-full-width" src="img/Croton_Logo.jpg" alt="an image of the portfolio">
+                <img class="portfolio-pull-left" src="img/Croton_Logo.jpg" alt="an image of the portfolio">
+                <img class="portfolio-pull-right" src="img/Croton_Logo.jpg" alt="an image of the portfolio">
+              </div>
+            </div>
+            <!-- Modal Closed -->
+</figure>
+
+<!-- Case Study 6 -->
+
+<figure class="portfolio-item portfoliorght">
+    <img class="anim nhl-img" src="img/NHL.jpg" alt="project img">
+      <figcaption>
+        <h2 class="portfolio-title nhl-name">Project Name</h2>
+        <p class="portfolio-desc nhl-desc"></p>
+        <a href="#" class="portfolio-link">More Info</a>
+      </figcaption>
+
+          <!--   Modal 6 -->
+          <div class="portfolio-modal">
+              <button class="modal-close">
+                <img src="img/remove.svg" alt="close modal icon" class="close-icon">
+            </button>
+              <div class="portfolio-header">
+                  <div class="portfolio-title-box gradient">
+                      <h2 class="portfolio-title">Project Name</h2>
+                      <div class="portfolio-subtitle">Subtitle</div>
+                    </div>
+              </div>
+              <div class="portfolio-content">
+                <img class="portfolio-full-width" src="img/Croton_Logo.jpg" alt="an image of the portfolio">
+                <img class="portfolio-pull-left" src="img/Croton_Logo.jpg" alt="an image of the portfolio">
+                <img class="portfolio-pull-right" src="img/Croton_Logo.jpg" alt="an image of the portfolio">
+              </div>
+            </div>
+            <!-- Modal Closed -->
+</figure>
+
+
+
+</div>
   </section>
 
-  <section class="second-casestudy pagesize">
-      <div class="case_info">
-          <h2>Subhead above title</h2>
-          <h1>Second Case Study</h1>
-          <p>Description of the case study goes here</p>
-        </div>
-  </section>
 
-  <section class="third-casestudy pagesize">
-      <div class="case_info">
-          <h2>Subhead above title</h2>
-          <h1>Third Case Study</h1>
-          <p>Description of the case study goes here</p>
-        </div>
-  </section>
 
-<!-- Case Studies -->
 
-  <section class="contact gradient pagesize">
+<!-- Contact -->
+
+  <section class="contact anim" id="contact">
       <h1>Get in touch</h1>
       <form action="">
-        <label class="name"> Name:
+        <label class="name" class="name"> Name:
           <input type="text" id="name">
         </label>
 
-        <label class="email">Email:
+        <label class="email" class="email">Email:
           <input type="email" id="email">
         </label>
 
-        <label class="message">Message:
+        <label class="message" class="message">Message:
             <textarea name="" id="message"></textarea>
           </label>
+
+          <input class="button form-button" type="submit" value="Submit">
 
 
       </form>
@@ -88,12 +288,12 @@
 
 <!-- Footer -->        
 
-<footer class="footer">
+<footer class="footer gradient anim">
     <p>Follow me on social media</p>
     <div class="social_icons">
-      <img class="social_icons" src="img/twitter.svg" alt="twitter">
-      <img class="social_icons" src="img/instagram.svg" alt="instagram">
-      <img class="social_icons" src="img/github.svg" alt="github">
+      <img class="social_icon" src="img/twitter.svg" alt="twitter">
+      <img class="social_icon" src="img/instagram.svg" alt="instagram">
+      <img class="social_icon" src="img/github.svg" alt="github">
     </div>
 
     <p class="copyright">Copyright 2018 Jtpcreative. All Rights Reserved</p>
@@ -102,9 +302,13 @@
 </div>
 
 
-<script src="js/vendor/jquery.js"></script>
-<script src="js/vendor/what-input.js"></script>
-<script src="js/vendor/foundation.js"></script>
-<script src="js/app.js"></script>
+<script src="js/main.js"></script>
+<script src="js/modal.js"></script>
+<script type="text/javascript">
+  window.sr = ScrollReveal();
+  sr.reveal('.anim');
+
+</script>
+
 </body>
 </html>

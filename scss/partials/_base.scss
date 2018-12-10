@@ -1,13 +1,30 @@
+* {
+    margin:  0;
+    padding: 0;
+    border: none;
+    outline: none;
+    vertical-align: baseline;
+    font-size: 100%;
+}
+
+
 body {
+    width: 100%;
     color: $black;
     font-family: $ff-s;
     line-height: 1.6;
     background: $white;
     font-size: .875rem;
+
+    @include mq {
+        font-size: 1.125rem;
+
+    }
+        
 }
 
-img {
-    max-width: 100%;
+.wrapper {
+    margin: 0 auto;
 }
 
 h1, h2, p {
@@ -16,14 +33,15 @@ h1, h2, p {
 }
 
 h1 {
+    text-align: center;
     color: $black;
-    line-height: 1;
-    font-size: 3.125rem;
+    margin: 0.5em 4%;
+    font-family: $ff-ss;
 
     span {
         color: $white;
-        line-height: 1;
-        font-size: 3.125rem;
+        line-height: 0.5S;
+        font-size: 4.125rem;
     }
 }
 

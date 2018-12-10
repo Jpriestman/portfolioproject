@@ -1,0 +1,43 @@
+.contact {
+    @include container;
+    padding: 5em 0;
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+    color: $grey;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    box-sizing: border-box;
+    display: block;
+    padding: .75em;
+    width: 100%;
+    background: lighten($grey, 75%);
+    border: 1px solid $grey;
+    font-size: 1.2rem;
+}
+
+.button {
+    display: inline-block;
+    width: auto;
+    margin-top: 1em;
+    margin-left: auto;
+    background: $teal;
+    border: none;
+    padding: .5em 1.5em;
+    color: $white;
+
+}
+
+.button:hover {
+    background: $purple;
+
+}

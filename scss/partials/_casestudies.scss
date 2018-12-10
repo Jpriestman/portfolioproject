@@ -1,20 +1,187 @@
-.caseinfo {
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+.casestudies {
+    //overflow: hidden;
+    clear: both;
+}
 
-    h1,h2,p {
-        color: $black;
-        text-align: center;
-        margin: 0.5em 4%;
+.portfolio-item img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    margin: 1%;
+    width: 40%;
+
+    figcaption {
+        position: absolute;
+        top: 100%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 2em;
+        background: rgba($grey, .95);
+        color: $white;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        transition: top ease-in-out 250ms;
+    }
+
+    &:hover figcaption,
+    &:focus figcaption {
+        top:0;
+    }
+}
+
+.portfolio-link {
+    color: $white;
+    font-weight: $fw-l;
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-bottom: 3px solid $white;
+    align-self: flex-start;
+}
+
+.portfolio-title {
+    color: $white;
+    font-size: 3.265rem;
+    margin-bottom: auto;
+}
+
+.portfoliolft{
+    float: left;
+    margin-left: 9%;
+}
+
+.portfoliorght {
+    float: right;
+    margin-right: 9%;
+}
+
+.portfolio-modal {
+     position: fixed;
+     z-index: 10;
+     top: 2em;
+     bottom: 2em;
+     left: 2em;
+     right: 2em;
+     background: $white;
+     box-shadow: 0 0 0 3em rgba($black, .5);
+     overflow-y: scroll; 
+     overflow-x: hidden;
+
+     display: none;
+
+     &.is-open {
+         display: block;
+     }
+}
+
+ .modal-close {
+     background: $white;
+     position: fixed;
+     left: 1em;
+     top: 1em;
+     border: 0;
+     width: 2em;
+     height: 2em;
+     padding: 4px 0 0;
+     border-radius: 50%;
+     cursor: pointer;
+     box-shadow: 0 0 5px rgba($black, .5);
+ }
+
+ .close-icon {
+    width: 30px;
+    height: 30px;
+ }
+
+ .portfolio-header {
+     text-align: left;
+     padding: 5em 0;
+     margin-bottom: 2em;
+ }
+
+ .portfolio-title-box {
+     padding: 3em 0 3em 3em;
+     color: $white;
+     width: 70%;
+     .portfolio-title {
+         font-size: 3.5rem;
+         display: inline-block;
+
+         &::after {
+             content: '';
+             display: block;
+             height: 1px;
+             margin: 0.5em 0;
+             background: $white;
+             width: 100%;
+         }
+     }
+ }
+
+ .portfolio-subtitle {
+     font-size: 1rem;
+ }
+
+ .portfolio-content {
+     text-align: left;
+     width: 85%;
+     margin: 0 auto;
+     padding-bottom: 2em;
+ }
+
+ .portfolio-full-width {
+     width: 100vw;
+     max-width: initial;
+     margin: 0 calc(50% - 50vw);
+     height: 20vh;
+     object-fit: cover;
+ }
+
+ @include mq {
+     .portfolio-pull-left {
+         width: 65%;
+         float: left;
+         margin-right: 2em;
+     }
+
+     .portfolio-pull-right {
+         width: 65%;
+         float: right;
+         margin-left: 2em;
+     }
+ }
+
+@media only screen and (max-width: 900px) {
+
+    .portfolio-item  {
+        margin: 2%;
+        width: 91%;
 
     }
-    h1 {
-        font-size: 4em;
+
+    .portfoliolft{
+        float: none;
+        margin: 0 auto;
+    }
+    
+    .portfoliorght {
+        float: none;
+        margin: 0 auto;
     }
 
-    h2 {
-        font-size: 2em;
-        font-weight: 400;
-    }
+}
+
+@keyframes modalIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes modalOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
 }

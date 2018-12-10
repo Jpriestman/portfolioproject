@@ -2,35 +2,35 @@
     height: 100vh;
     align-items: center;
     justify-content: center;
-    display: block;
 
-    h1,h2,p {
+
+    p {
         color: $black;
-        text-align: center;
         margin: 0.5em 4%;
-
-
-
-    }
-    h1 {
-        font-size: 4em;
-    }
-
-    h2 {
-        font-size: 2em;
-        font-weight: 400;
+        padding: 10px;
     }
 
     .information {
-        height: 70vh;
+        padding: 50px;
     }
     
+
     .video {
-        height: 30vh;
+        margin-top: 50px;
+
+        h1 {
+            font-size: 2.8rem;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            padding: 50px;
+        }
     }
+}
 
-
-
-
-
+.svg-character {
+    height: 50vh;
+    float: left;
+    margin-left: 100px;
+    padding: 50px;
 }

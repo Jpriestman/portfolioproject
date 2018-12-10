@@ -59,6 +59,28 @@ background: linear-gradient(132deg, rgb(93, 193, 163), rgb(46, 44, 109));
 
 }
 
+#vidSec {
+    min-height: 100vh;
+}
+
+#vidSec ul li{
+    margin: 0 auto;
+    width: 20%;
+    margin: 0 auto;
+    list-style: none;
+} 
+
+
+
+#vidSec ul li a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 33%;
+
+    
+}
+
 .pagesize {
     height: 100vh;
     display: flex;

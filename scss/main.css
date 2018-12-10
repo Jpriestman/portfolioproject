@@ -56,6 +56,24 @@ h2 {
   background: linear-gradient(132deg, #5dc1a3, #2e2c6d);
 }
 
+#vidSec {
+  min-height: 100vh;
+}
+
+#vidSec ul li {
+  margin: 0 auto;
+  width: 20%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+#vidSec ul li a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding-left: 33%;
+}
+
 .pagesize {
   height: 100vh;
   display: -webkit-box;
@@ -98,7 +116,7 @@ header {
   background: var(--background);
   text-align: center;
   position: fixed;
-  z-index: 999;
+  z-index: 0.5;
   width: 100%;
 }
 
@@ -363,7 +381,8 @@ nav a:hover {
 }
 
 .casestudies {
-  clear: both;
+  overflow: hidden;
+  position: inherit;
 }
 
 .portfolio-item img {
@@ -432,7 +451,7 @@ nav a:hover {
 
 .portfolio-modal {
   position: fixed;
-  z-index: 10;
+  z-index: 1;
   top: 2em;
   bottom: 2em;
   left: 2em;
@@ -451,6 +470,7 @@ nav a:hover {
 
 .modal-close {
   background: #ffffff;
+  z-index: 1;
   position: fixed;
   left: 1em;
   top: 1em;
@@ -584,6 +604,7 @@ nav a:hover {
   margin: 0 auto;
   max-width: 50em;
   padding: 5em 0;
+  margin-top: 800px;
 }
 
 label {

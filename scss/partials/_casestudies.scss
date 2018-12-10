@@ -1,6 +1,4 @@
 .casestudies {
-    //overflow: hidden;
-    clear: both;
 }
 
 .portfolio-item img {
@@ -62,7 +60,7 @@
 
 .portfolio-modal {
      position: fixed;
-     z-index: 10;
+     z-index: 1;
      top: 2em;
      bottom: 2em;
      left: 2em;
@@ -81,6 +79,7 @@
 
  .modal-close {
      background: $white;
+     z-index: 1;
      position: fixed;
      left: 1em;
      top: 1em;
